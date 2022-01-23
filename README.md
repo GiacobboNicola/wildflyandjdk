@@ -13,7 +13,7 @@ The *image* is built in the following way:
 
 Recommended way to use this image is to build your application in to next layer using own docker image like this:
 ```docker
-FROM .../wildflyandjdk
+FROM nigia/wildflyandjdk
 
 ADD ./deployments /opt/jboss/wildfly-{WILDFLY-VERSION}/standalone/deployments #(for deploying your war)
 
@@ -21,3 +21,5 @@ CMD ["/opt/jboss/wildfly-{WILDFLY-VERSION}/bin/standalone.sh", "-b", "0.0.0.0", 
 ```
 where `{WILDFLY-VERSION}` is 25.0.1.Final by default. 
 You can use a custom standalone.xml just adding  "-c", "standalone.xml".
+
+Docker hub: https://hub.docker.com/r/nigia/wildflyandjdk
