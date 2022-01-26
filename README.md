@@ -1,5 +1,5 @@
 # wildflyandjdk
-Wildfly (>= 25) on adopt openjdk (>=8)
+Wildfly (default 24) on adopt openjdk (default 8)
 
 This repository is based on [this](https://github.com/svolotin/wildfly14adoptopenjdk8) and [its fork](https://github.com/posapiano-ops/wildfly14openjdk8).
 
@@ -19,5 +19,7 @@ ADD ./deployments /opt/jboss/wildfly-{WILDFLY-VERSION}/standalone/deployments #(
 
 CMD ["/opt/jboss/wildfly-{WILDFLY-VERSION}/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0" , "--debug"]
 ```
-where `{WILDFLY-VERSION}` is 25.0.1.Final by default. 
+where `{WILDFLY-VERSION}` is 24.0.1.Final by default. 
 You can use a custom standalone.xml just adding  "-c", "standalone.xml".
+
+Docker hub: https://hub.docker.com/r/nigia/wildflyandjdk
