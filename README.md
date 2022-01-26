@@ -22,8 +22,4 @@ CMD ["/opt/jboss/wildfly-{WILDFLY-VERSION}/bin/standalone.sh", "-b", "0.0.0.0", 
 where `{WILDFLY-VERSION}` is 24.0.1.Final by default. 
 You can use a custom standalone.xml just adding  "-c", "standalone.xml".
 
-<<<<<<< HEAD
 Docker hub: https://hub.docker.com/r/nigia/wildflyandjdk
-=======
-Docker hub: https://hub.docker.com/r/nigia/wildflyandjdk
->>>>>>> 27f64d23bda07e59112c5e04bb465e7a8afd3181
