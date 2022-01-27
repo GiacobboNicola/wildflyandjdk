@@ -12,7 +12,7 @@ The basic *image* is built in the following way:
   - **latest**: it adds some tools to **light** version like [pdftk](https://en.wikipedia.org/wiki/PDFtk), [qrencode](https://fukuchi.org/works/qrencode/manual/index.html), [dmtx-utils](https://github.com/dmtx/dmtx-utils), [imagemagick](https://imagemagick.org/index.php) and sets jboss as an user instead of root.
   - **vpn**: the images contains [openconnct](http://www.infradead.org/openconnect/), [net-tools](https://net-tools.sourceforge.io/), [iputils-ping](https://github.com/iputils/iputils/blob/master/ping/ping.c), [iptables](https://en.wikipedia.org/wiki/Iptables), [tcpdump](https://www.tcpdump.org/) and [telnet](https://en.wikipedia.org/wiki/Telnet)
 
-## **How to use it: Dockerfile**
+## **How to use it**
 
 Recommended way to use this image (where `{WILDFLY-VERSION}` is 24.0.1.Final by default):
 ## Latest or light
