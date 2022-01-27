@@ -15,7 +15,7 @@ The basic *image* is built in the following way:
 ## **How to use it**
 
 Recommended way to use this image (where `{WILDFLY-VERSION}` is 24.0.1.Final by default):
-## Latest or light
+### Latest or light
 * Docker-compose:
 ```docker
 wildflyandjdk:
@@ -35,7 +35,7 @@ ADD ./deployments /opt/jboss/wildfly-{WILDFLY-VERSION}/standalone/deployments #(
 
 CMD ["/opt/jboss/wildfly-{WILDFLY-VERSION}/bin/standalone.sh", "-c", "standalone.xml", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0" , "--debug"]
 ```
-## Vpn
+### Vpn
 * Status Vpn is:
    * `0` connected
    * `1` disconnected
