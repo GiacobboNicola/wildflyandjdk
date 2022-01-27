@@ -2,10 +2,12 @@
 FROM adoptopenjdk/openjdk8:jdk8u172-b11
 LABEL maintainer="nigia giacobbo.nicola@gmail.com"
 
-RUN apt update \
-     && apt install -y pdftk qrencode dmtx-utils imagemagick \ 
-     && rm -rf /var/lib/apt/lists/*
-     
+#remove those lines for the light version
+# RUN apt update \
+#      && apt install -y pdftk qrencode dmtx-utils imagemagick \ 
+#      && rm -rf /var/lib/apt/lists/*
+#----------------------------------------
+
 ENV WILDFLY_VERSION 24.0.1.Final
 ENV WILDFLY_SHA1 751e3ff9128a6fbe72016552a9b864f729a710cc
 ENV JBOSS_INSTALL /opt/jboss
