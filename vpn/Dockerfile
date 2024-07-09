@@ -1,6 +1,6 @@
 # Based on adopt openjdk 8
 FROM adoptopenjdk/openjdk8:jdk8u172-b11
-LABEL maintainer="nigia giacobbo.nicola@gmail.com"
+LABEL maintainer="N. Giacobbo ningia.coder@gmail.com"
 
 RUN apt update \
      && apt install -y curl telnet net-tools openconnect iputils-ping iptables \
