@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VPN_OPTIONS="-q -b --no-cert-check"
+VPN_OPTIONS="-q -b --no-cert-check --useragent=AnyConnect"
 
 if [[ -z "${VPN_PASSWORD}" ]]; then
     # Ask for password
